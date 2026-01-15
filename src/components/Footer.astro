@@ -3,11 +3,30 @@ import astroLogo from "../assets/astro.svg";
 import background from "../assets/background.svg";
 ---
 
-<footer>
+<footer class="site-footer">
 	<p>{new Date().getFullYear()} Castlesage™.</p>
 	<p>
-		Special thanks to Kristie Mill & <a
-			href="https://github.com/theroyalwhee0">Adam Mill</a
-		> for their support.
+		Special thanks to 
+		<a href="https://github.com/theroyalwhee0">Adam Mill</a> 
+		& Kristie Mill for their support.
 	</p>
 </footer>
+<style>
+	/* Footer */
+	/* Centered footer at the bottom */
+	.site-footer {
+		margin-top: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 0.5rem 0;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.site-footer p {
+		margin: 0.25rem 0;
+		line-height: 1.25;
+	}
+</style>
